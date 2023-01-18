@@ -8,13 +8,18 @@ os.system("clear")
 
 list_1 = "пав пвр ап абв вавы АБВ АВвв абв"
 
-list_2 = list(filter(lambda i: "абв" not in i.lower(), list_1.split()))
-
-print(list_2)
-
 data = open('file_1_1', 'a')
 data.writelines(list_1)
 data.close
+
+list_2 = list(filter(lambda i: "абв" not in i.lower(), list_1.split()))
+
+data = open('file_1_2', 'a')
+data.writelines(list_2)
+data.close
+
+print(list_2)
+
           
 # Создайте программу для игры с конфетами человек против человека.
 # Условие задачи: На столе лежит 2021 конфета. Играют два игрока делая ход друг после друга. 
